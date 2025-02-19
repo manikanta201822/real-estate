@@ -1,0 +1,16 @@
+class Property:
+    def __init__(self, property_id, name, type, location, price):
+        self.property_id = property_id
+        self.name = name
+        self.type = type
+        self.location = location
+        self.price = price
+
+    def __str__(self):
+        return f"ID: {self.property_id} | Name: {self.name} | Type: {self.type} | Location: {self.location} | Price: ${self.price}"
+
+
+class RealEstateSystem:
+    def __init__(self):
+        self.properties = []
+        self.next_id =
